@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Input.scss';
+import '../styles/Input.scss';
 
 const Input = (props) => {
     const { name, id, extraClass, type, max } = props;

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Input } from './atoms/input';
+import { Input } from './Input';
 import closeIcon from '../assets/icons/close-icon.svg';
 import heartIcon from '../assets/icons/heart-icon.svg';
 import heartIconFull from '../assets/icons/heart-icon-full.svg';
