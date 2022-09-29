@@ -1,0 +1,104 @@
+@use 'vars';
+
+/* 
+    RULES: 
+    1- General and Layout
+    2- Fonts
+    3- Margins & Paddings
+    4- Forms
+    5- Others
+    6- Media Queries
+*/
+
+/* GENERAL & LAYOUT*/
+body {
+    background-color: var(--dark);
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    height: calc(100vh + 1000px);
+}
+#app {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--dark);
+    position: fixed;
+}
+.app {
+    background: url('https://firebasestorage.googleapis.com/v0/b/luispalomo-b0f22.appspot.com/o/bg_1.jpg?alt=media&token=af2944d8-ee50-4148-b7ae-d61ee071605f');
+    background-position: left;
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.section {
+    height: calc(100% - var(--size-xxl));
+    width: min(calc(100vw - var(--size-xl)), 1200px);
+    position: relative;
+}
+/* FONTS */
+h1, h2, h3, h4, h5, h6 {
+    margin: var(--size-xs) 0;
+}
+p {
+    font-size: var(--size-s);
+    margin: 0;
+}
+h1 {
+    font-size: var(--size-xxl);
+    line-height: calc(var(--size-xxl) / 1.2);
+    text-transform: uppercase;
+    text-indent: calc(var(--size-xxs) * -2);
+}
+/* MARGINS & PADDINGS */
+.mt-2 { margin-top: var(--size-m);}
+.mb-2 { margin-bottom: var(--size-m);}
+
+/* OTHERS */
+.opacity-0 {
+    opacity: 0;
+}
+.display-none {
+    display: none;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1440px) {
+    /* GENERAL & LAYOUT */
+    .app { background-size: 120% auto; }
+}
+/* MEDIA */
+@media screen and (max-width: 1124px) {
+    /* GENERAL & LAYOUT */
+    .app {
+        background: url('https://firebasestorage.googleapis.com/v0/b/luispalomo-b0f22.appspot.com/o/bg_1_1x1.png?alt=media&token=63b6d8de-c49c-4039-afd8-9feba59885a5');
+        background-size: cover;
+        background-position: 30%;
+    }
+}
+@media screen and (max-width: 425px) and (orientation: portrait) {
+    /* GENERAL & LAYOUT */
+    .app {
+        background: url('https://firebasestorage.googleapis.com/v0/b/luispalomo-b0f22.appspot.com/o/bg_1_mobile.png?alt=media&token=c95489bd-2f73-4bb7-b1e0-17a0e567e2ee');
+        background-size: cover;
+        background-position: left;
+    }
+    section.section {
+        height: calc(100vh - var(--size-xl));
+    }
+    /* FONTS */
+    h1 {
+        font-size: var(--size-xl);
+        line-height: calc(var(--size-xl) / 1.2);
+        text-transform: uppercase;
+        text-indent: calc(var(--size-xxs) * -1);
+    }
+}

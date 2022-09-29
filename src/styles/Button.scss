@@ -1,0 +1,25 @@
+@use 'vars';
+
+.btn {
+    width: min(100%, 300px);
+    height: 40px;
+    border: none;
+    background-color: var(--white);
+    font-size: var(--size-s);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+.btn:hover {
+    background-color: var(--color-1);
+}
+
+.btn.dark {
+    background-color: var(--dark);
+    color: var(--white);
+}
+.btn.dark:hover {
+    background-color: var(--gray-dark);
+}

@@ -1,0 +1,49 @@
+@use 'vars';
+
+.info-container {
+    align-self: end;
+    display: flex;
+    justify-content: right;
+}
+.info-container .popUp-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    transition: 300ms ease;
+    width: auto;
+}
+.info-container .ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-s);
+}
+.info-container .ingredients img {
+    width: 40px;
+}
+.popUp-cta {
+    background-color: transparent;
+    padding: var(--size-xs) var(--size-xl);
+    font-size: var(--size-s);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 200ms ease;
+}
+.popUp-cta:hover {
+    background-color: var(--color-1);
+}
+
+@media screen and (max-width: 425px) and (orientation: portrait) {
+    .info-container .popUp-container, .popUp-cta {
+        width: 100%;
+    }
+    .popUp-cta:hover {
+        background-color: var(--color-1);
+        padding: var(--size-xs) var(--size-xl);
+    }
+    .info-container .ingredients {
+        padding-bottom: var(--size-xl);
+    }
+}

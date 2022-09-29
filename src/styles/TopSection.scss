@@ -1,0 +1,21 @@
+/* 
+    RULES: 
+    1- General and Layout
+    2- Fonts
+    3- Margins & Paddings
+    4- Forms
+    5- Others
+    6- Media Queries
+*/
+
+.top-section {
+    display: grid;
+    grid-template-rows: 10% 1fr 30%;
+}
+
+@media screen and (max-width: 425px) and (orientation: portrait) {
+    .top-section {
+        display: grid;
+        grid-template-rows: 10% 1fr 50%;
+    }
+}

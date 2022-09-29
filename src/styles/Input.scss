@@ -1,0 +1,23 @@
+@use 'vars';
+
+.input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    max-height: 40px;
+    box-sizing: border-box;
+    margin: var(--size-xs) 0 var(--size-s) 0;
+    padding: 0 var(--size-xs);
+    font-size: var(--size-s);
+    color: var(--gray-dark);
+    caret-color: var(--color-1);
+    border: none;
+    outline: none;
+}
+.input:hover {
+    outline: 1px var(--gray) solid;
+}
+
+.input:checked {
+    outline: 1px black solid;
+}

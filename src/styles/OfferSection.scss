@@ -1,0 +1,120 @@
+@use 'vars';
+
+/* 
+    RULES: 
+    1- General and Layout
+    2- Fonts
+    3- Margins & Paddings
+    4- Forms
+    5- Others
+    6- Media Queries
+*/
+
+/* GENERAL & LAYOUT*/
+.offerSection {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: var(--size-xl);
+}
+
+/* FONTS */
+.offerSection h4 {
+    font-size: var(--size-m);
+    margin: 0;
+}
+.offerSection p {
+    color: var(--gray);
+    font-size: calc(var(--size-s) - 2px);
+}
+.form-container h2 {
+    font-size: var(--size-xl);
+    margin-bottom: var(--size-m);
+}
+
+/* OTHERS */
+.offerSection .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 30% 1fr 1fr 1fr 30%;
+    z-index: 1;
+}
+.bgColor1 { background-color: var(--color-5);}
+.bgColor2 { background-color: var(--color-4);}
+.bgColor3 { background-color: var(--color-3);}
+.bgColor4 { background-color: var(--color-2);}
+.bgColor5 { background-color: var(--color-1);}
+
+.offerSection .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.offerSection .recepie-content {
+    display: grid;
+    z-index: 2;
+    box-shadow: 4px 4px 10px #00000020;
+    overflow: hidden;
+}
+
+.offerSection .recepie-info {
+    position: relative;
+    padding: var(--size-m);
+    background-color: var(--white);
+}
+.offerSection .recepie-info::after {
+    content: " ";
+    position: absolute;
+    top: -27px;
+    left: 0;
+    // width: 100%;
+    width: 0;
+    border-bottom: 28px var(--white) solid;
+    border-left: 400px transparent solid;
+}
+.offerSection .recepie-info img {
+    position: absolute;
+    right: var(--size-m);
+    top: calc(var(--size-m) - (var(--size-m) * 4));
+}
+
+.offerSection .form-container {
+    z-index: 2;
+}
+
+.offerSection .form-container {
+    max-width: 40%;
+}
+
+.offerSection .form-container label {
+    display: block;
+}
+
+.offerSection .form-container .btn {
+    margin-top: var(--size-s);
+    width: 100%;
+}
+
+@media screen and (max-width: 1124px) {
+    /* GENERAL & LAYOUT*/
+    .offerSection {
+        padding: var(--size-l) 0;
+    }
+    .offerSection .recepie-content {
+        display: none;
+    }
+    .offerSection .form-container {
+        max-width: calc(100% - (var(--size-l) * 2));
+    }
+}
