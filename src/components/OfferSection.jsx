@@ -104,13 +104,13 @@ const OfferSection = (props) => {
                 <div className="recepie-info">
                     <img src={heartIcon} alt="like icon" />
                     <img src={heartIconFull} alt="like icon" className='opacity-0'/>
-                    <h4>Empanadas caseras</h4>
+                    <h4>Homemade empanadas</h4>
                     <p>Likes: 236,587</p>
                     <p>Views: 3,433,012</p>
                 </div>
             </div>
             <div className="form-container">
-                <h2 className="offer-title">Get your first recepie by suscribe!</h2>
+                <h2 className="offer-title">Get your first recepy by suscribing!</h2>
                 <form action="/" ref={ form }>
                     <label htmlFor="name">Your name here:</label>
                     <Input name="name" type="text" extraClass="" max="30"/>
