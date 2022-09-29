@@ -31,7 +31,6 @@ const MoreInfo = () => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.popUp-container',
-                markers: true,
                 start: 'top 89%',
                 end: 'top 15%',
                 scrub: true
