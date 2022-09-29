@@ -104,7 +104,7 @@ const OfferSection = (props) => {
                 <div className="recepie-info">
                     <img src={heartIcon} alt="like icon" />
                     <img src={heartIconFull} alt="like icon" className='opacity-0'/>
-                    <h4>Homemade empanadas</h4>
+                    <h4>Empanadas!</h4>
                     <p>Likes: 236,587</p>
                     <p>Views: 3,433,012</p>
                 </div>
