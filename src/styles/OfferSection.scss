@@ -63,9 +63,19 @@
 
 .offerSection .recepie-content {
     display: grid;
+    grid-template-rows: 1fr 25%;
+    height: 500px;
+    max-height: 90%;
+    width: 300px;
     z-index: 2;
     box-shadow: 4px 4px 10px #00000020;
     overflow: hidden;
+}
+
+.recepie-img {
+    background: url('https://firebasestorage.googleapis.com/v0/b/luispalomo-b0f22.appspot.com/o/empanadas-caseras.jpg?alt=media&token=268f25e4-d8f2-4a20-88c6-342f30e229dc');
+    background-position: center bottom;
+    background-size: cover;
 }
 
 .offerSection .recepie-info {
@@ -104,6 +114,15 @@
 .offerSection .form-container .btn {
     margin-top: var(--size-s);
     width: 100%;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1440px) {
+    /* GENERAL & LAYOUT */
+    .form-container h2 {
+        font-size: calc(var(--size-xl) / 1.5);
+    }
+    
 }
 
 @media screen and (max-width: 1124px) {

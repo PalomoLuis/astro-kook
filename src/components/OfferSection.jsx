@@ -100,7 +100,7 @@ const OfferSection = (props) => {
                 <img src={closeIcon} alt="close-icon" />
             </button>
             <div className="recepie-content">
-                <img src={recepieImg} alt="recepie-image" />
+                <div className="recepie-img"></div>
                 <div className="recepie-info">
                     <img src={heartIcon} alt="like icon" />
                     <img src={heartIconFull} alt="like icon" className='opacity-0'/>
